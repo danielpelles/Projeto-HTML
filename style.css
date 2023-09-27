@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(202, 202, 202);
+    height: 100vh;
+   
+}
+.interface{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    background-color: rgb(56, 62, 71);
+    padding: 20px 2%;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    
+}
+/* Estilos para os links do menu */
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f4f4f4;
+    position: relative;
+}
+
+/* Estilos para o efeito de sublinhado */
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Posição inicial abaixo do texto */
+    left: 0;
+    width: 0; /* Largura inicial 0 */
+    height: 2px; /* Altura da linha de sublinhado */
+    background-color: #3498db; /* Cor do sublinhado */
+    transition: width 0.3s; /* Animação da largura */
+}
+
+.menu a:hover::before {
+    width: 100%; /* Aumenta a largura da linha para 100% */
+}
