@@ -5,8 +5,8 @@
 - <a href="#tecnologias-utilizadas">Tecnologias utilizadas</a>
 
 
-## Autor 👨‍💻
-![Autor] (./images/foto,png)
+## Autor 
+👨‍💻![Autor](images/foto.png)
 
 ## Tecnologias Utilizadas
 1. [HTML5](https://html5up.net/)
