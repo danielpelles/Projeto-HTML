@@ -1,64 +1,122 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fjalla One', sans-serif;
-    font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body{
-    background-color: rgb(202, 202, 202);
-    height: 100vh;
-   
+  max-width: auto;
+  margin: 0 auto;
 }
-.interface{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* ESTILO DO CABEÇALHO */
 
 header{
-    background-color: rgb(56, 62, 71);
-    padding: 20px 2%;
+  background-color: transparent;
+  padding: 20px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 60vh;
+  position: fixed; /* Torna o cabeçalho fixo */
+  width: 100%; /* Ocupa a largura total da tela */
+}
+header span{
+  color: #fff;
+}
+header h1{
+  color: #d30015;
+  font-size: 1.5rem;
+  margin-right: 10px;
 }
 
-.menu{
-    list-style: none;
-    padding: 0;
-    
-}
-/* Estilos para os links do menu */
-.menu ul {
-    list-style: none;
-    padding: 0;
+/* header navegação primaria */
+header .navegacao-primaria {
+  display: flex;
+  margin-left: 10px;
+  gap: 10px;
+  align-items: center;
 }
 
-.menu li {
-    display: inline-block;
-    margin-right: 20px;
+header .navegacao-primaria li a {
+  color: #808080;
+  font-size: 1.3rem;
 }
 
-.menu a {
-    text-decoration: none;
-    color: #f4f4f4;
-    position: relative;
+/* section main*/
+.section-main {
+  display: grid;
+  justify-content:center;
+  align-items: center;
+  padding: 10px;
+  background-image: url(images/fundo3.jpg); /* Sua imagem de fundo */
+  height: 100vh; /* Altura da seção igual à altura da tela */
+  background-size: cover; /* Ajusta a imagem de fundo para cobrir a seção */
+  background-repeat: no-repeat;
 }
 
-/* Estilos para o efeito de sublinhado */
-.menu a::before {
-    content: '';
-    position: absolute;
-    bottom: -2px; /* Posição inicial abaixo do texto */
-    left: 0;
-    width: 0; /* Largura inicial 0 */
-    height: 2px; /* Altura da linha de sublinhado */
-    background-color: #3498db; /* Cor do sublinhado */
-    transition: width 0.3s; /* Animação da largura */
+.section-main div{
+  align-self: center;
 }
 
-.menu a:hover::before {
-    width: 100%; /* Aumenta a largura da linha para 100% */
+.section-main div h2{
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.section-main div p{
+  font-family: 'Poppins';
+  font-weight: 200;
+  color: #800000;
+}
+
+.section-main div a {
+  display: block;
+  color: #880acc;
+  padding: 15px;
+  border-radius: 5px 5px;
+  border: 2px solid white;
+}
+
+/* section sobremim*/
+.sobremim {
+  background-color: rgb(189, 189, 189);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+  padding: 60px;
+}
+
+.sobremim div{
+  margin-top: 120px;
+  align-self: start;
+  display: grid;
+  gap: 30px;
+}
+
+.sobremim div h2{
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #a4006d;
+}
+
+.sobremim div p{
+  font-family: 'Poppins';
+  font-weight: 200;
+  color: #000000;
+}
+
+.sobremim div a {
+  justify-self: start;
+  color: #000000;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 174, 255);
+}
+
+.sobremim img {
+  max-width: 100%;
 }
